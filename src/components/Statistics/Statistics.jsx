@@ -1,7 +1,7 @@
 import React from 'react';
 import { Notification } from 'components/Notification/Notification';
 import PropTypes from 'prop-types';
-import { Rating_list, Rating, Ul, P } from './Statistics.styled';
+import { Ratinglist, Rating, Ul, P } from './Statistics.styled';
 
 export const Statictics = ({
   good,
@@ -14,21 +14,21 @@ export const Statictics = ({
     <Rating>
       {total > 0 ? (
         <Ul>
-          <Rating_list>
+          <Ratinglist>
             <P>Good: {good}</P>
-          </Rating_list>
-          <Rating_list>
+          </Ratinglist>
+          <Ratinglist>
             <P>Neutral: {neutral}</P>
-          </Rating_list>
-          <Rating_list>
+          </Ratinglist>
+          <Ratinglist>
             <P>Bad: {bad}</P>
-          </Rating_list>
-          <Rating_list>
+          </Ratinglist>
+          <Ratinglist>
             <P>Total: {total}</P>
-          </Rating_list>
-          <Rating_list>
+          </Ratinglist>
+          <Ratinglist>
             <P>Positive feedback: {positivePercentage}%</P>
-          </Rating_list>
+          </Ratinglist>
         </Ul>
       ) : (
         <Notification message="There is no feedback" />

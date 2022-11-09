@@ -11,22 +11,6 @@ export class App extends Component {
     bad: 0,
   };
 
-  // onClickGood = () => {
-  //   this.setState(prev => ({
-  //     good: prev.good + 1,
-  //   }));
-  // };
-  // onClickNeutral = () => {
-  //   this.setState(prev => ({
-  //     neutral: prev.neutral + 1,
-  //   }));
-  // };
-  // onClickBad = () => {
-  //   this.setState(prev => ({
-  //     bad: prev.bad + 1,
-  //   }));
-  // };
-
   onClickButton = event => {
     this.setState(prev => ({
       [event]: prev[event] + 1,
@@ -50,9 +34,6 @@ export class App extends Component {
           <FeedbackOptions
             options={[`good`, `neutral`, `bad`]}
             onLeaveFeedback={this.onClickButton}
-            // onClickGood={this.onClickGood}
-            // onClickNeutral={this.onClickNeutral}
-            // onClickBad={this.onClickBad}
           />
         </Section>
 

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Rating_list = styled.li`
+export const Ratinglist = styled.li`
   list-style: none;
   margin-bottom: 10px;
 `;

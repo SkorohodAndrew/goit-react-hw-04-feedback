@@ -2,17 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Button,
-  Button_List,
-  Button_Container,
+  ButtonList,
+  ButtonContainer,
 } from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div>
-      <Button_Container>
+      <ButtonContainer>
         {options.map(option => {
           return (
-            <Button_List key={option}>
+            <ButtonList key={option}>
               <Button
                 type="button"
                 onClick={() => {
@@ -21,10 +21,10 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
               >
                 {option}
               </Button>
-            </Button_List>
+            </ButtonList>
           );
         })}
-      </Button_Container>
+      </ButtonContainer>
     </div>
   );
 };

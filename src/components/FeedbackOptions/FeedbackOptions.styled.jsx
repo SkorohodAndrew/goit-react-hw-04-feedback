@@ -21,12 +21,12 @@ export const Button = styled.div`
   }
 `;
 
-export const Button_Container = styled.ul`
+export const ButtonContainer = styled.ul`
   display: flex;
   justify-content: space-around;
   padding: 0px;
 `;
 
-export const Button_List = styled.li`
+export const ButtonList = styled.li`
   list-style: none;
 `;
